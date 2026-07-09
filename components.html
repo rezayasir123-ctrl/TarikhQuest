@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TarikhQuest Components</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="./sacred_journey_design_system/tailwind.config.js"></script>
+  <link rel="stylesheet" href="./sacred_journey_design_system/index.css" />
+</head>
+<body class="min-h-screen bg-background p-6 text-on-background">
+  <div class="mx-auto max-w-5xl space-y-6">
+    <section class="rounded-[24px] bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/20">
+      <h2 class="sj-headline-md text-primary">Reusable Components</h2>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <button class="sj-btn-primary">Button Primary</button>
+        <button class="sj-btn-secondary">Button Secondary</button>
+        <button class="sj-btn-ghost">Button Ghost</button>
+        <button class="sj-btn-icon"><span class="material-symbols-outlined">arrow_back</span></button>
+      </div>
+    </section>
+    <section class="rounded-[24px] bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/20">
+      <h2 class="sj-headline-md text-primary">Cards</h2>
+      <div class="mt-4 grid gap-4 md:grid-cols-2">
+        <div class="sj-card-achievement">
+          <p class="sj-label-sm uppercase tracking-wider text-primary-fixed">Achievement</p>
+          <h3 class="sj-headline-md mt-2">Badge Scholar</h3>
+        </div>
+        <div class="sj-card-mission">
+          <p class="sj-label-sm text-primary">Mission Card</p>
+          <h3 class="sj-headline-md mt-2">Hijrah ke Madinah</h3>
+        </div>
+      </div>
+    </section>
+    <section class="rounded-[24px] bg-surface-container-lowest p-6 shadow-sm border border-outline-variant/20">
+      <h2 class="sj-headline-md text-primary">Inputs</h2>
+      <div class="mt-4 space-y-3">
+        <input class="sj-input w-full" placeholder="Nama pengguna" />
+        <select class="sj-select w-full">
+          <option value="">Pilih kelas</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+        <textarea class="sj-textarea w-full" placeholder="Refleksi..."></textarea>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
